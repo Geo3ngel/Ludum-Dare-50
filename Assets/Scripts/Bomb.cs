@@ -5,6 +5,20 @@ using TMPro;
 
 public class Bomb : MonoBehaviour
 {
+
+    // Singleton Declaration
+    private static Bomb _instance;
+    public static Bomb Instance {get {return _instance;}}
+
+    private void Awake() {
+        if(_instance != null && _instance != this){
+            Debug.Log("Destroyed duplicate instance of Bomb");
+            Destroy(this.gameObject);
+        }else{
+            _instance = this;
+        }
+    }
+    
     [SerializeField] float startTime = 60f;
     [SerializeField] TextMeshProUGUI timeDisplay;
     [SerializeField] private float maxTime = 5999.999f;
