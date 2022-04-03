@@ -12,6 +12,11 @@ public class GM : MonoBehaviour
     private static GM _instance;
     public static GM Instance {get {return _instance;}}
 
+    [SerializeField] private int strikes = 0;
+    public delegate void StrikeEventHandler(int strikeCount);
+    public event StrikeEventHandler StrikeEvent;
+    // public event EventHandler ResetEvent;
+
     private void Awake() {
         if(_instance != null && _instance != this){
             Debug.Log("Destroyed duplicate instance of GM");
@@ -21,11 +26,6 @@ public class GM : MonoBehaviour
             Reset();
         }
     }
-
-    [SerializeField] private int strikes = 0;
-    public delegate void StrikeEventHandler(int strikeCount);
-    public event StrikeEventHandler StrikeEvent;
-    // public event EventHandler ResetEvent;
 
     // I want to trigger various behavioral changes based on game "state"...
     // So this should send out a "Message" right? As in a messaging system?
