@@ -9,21 +9,39 @@ using UnityEngine;
 
 public class Beeper : MonoBehaviour
 {
+    [SerializeField] private AudioSource beep;
+    [SerializeField] private float defaultPitch = 0;
+    [SerializeField] private float lowPitch = 1;
+    [SerializeField] private float mediumPitch = 2;
+    [SerializeField] private float highPitch = 3;
+
+    // TODO: Implement such that it plays at the specified frequency at the desired times!
+    [SerializeField] private float frequency = 1f;
 
     public void Awake(){
-        GM.Instance.ThirdStrikeEvent += ThirdStrike;
-        GM.Instance.ThirdStrikeEvent += ThirdStrike;
-        GM.Instance.ThirdStrikeEvent += ThirdStrike;
+        beep = gameObject.GetComponent<AudioSource>();
+        GM.Instance.StrikeEvent += SetPitch;
     }
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
+    
+    public void SetPitch(int strikes){
+        switch (strikes)
+        {
+            case Constants.NO_STRIKES:
+                beep.pitch = defaultPitch;
+                break;
+            case Constants.FIRST_STRIKE:
+                beep.pitch = lowPitch;
+                break;
+            case Constants.SECOND_STRIKE:
+                beep.pitch = mediumPitch;
+                break;
+            case Constants.THIRD_STRIKE:
+                beep.pitch = highPitch;
+                break;
+            default:
+                Debug.LogError("Invalid strike value in SetPitch.");
+                break;
+        }
         
     }
 }
