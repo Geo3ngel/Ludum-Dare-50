@@ -7,10 +7,10 @@ TextureImporter:
     second: LCD-Sheet_0
   - first:
       213: -251582722652591826
-    second: LCD-Sheet_1
+    second: RubberDampener_small
   - first:
       213: -6897832793437534306
-    second: LCD-Sheet_2
+    second: Connector
   - first:
       213: 3666803778835071388
     second: LCD-Sheet_6
@@ -19,40 +19,40 @@ TextureImporter:
     second: LCD-Sheet_7
   - first:
       213: -5252979788363634353
-    second: LCD-Sheet_8
+    second: WireSlot
   - first:
       213: -8514705022440482592
-    second: LCD-Sheet_9
+    second: RubberDampener_medium
   - first:
       213: -5110153082914809749
-    second: LCD-Sheet_10
+    second: RubberDampener_large
   - first:
       213: -8151305811127048132
-    second: LCD-Sheet_11
+    second: LED_OFF
   - first:
       213: -3226730786850184339
-    second: LCD-Sheet_12
+    second: LED_BLUE
   - first:
       213: 8754878682007237120
-    second: LCD-Sheet_13
+    second: LED_GREEN
   - first:
       213: -6586651973197326745
-    second: LCD-Sheet_14
+    second: LED_RED
   - first:
       213: -7834807642142286981
-    second: LCD-Sheet_15
+    second: LED_YELLOW
   - first:
       213: 4175300994775978565
-    second: LCD-Sheet_16
+    second: BlueBones
   - first:
       213: 592723103549832368
-    second: LCD-Sheet_17
+    second: YellowBones
   - first:
       213: 4382829625944024841
-    second: LCD-Sheet_18
+    second: MagentaBones
   - first:
       213: -7422446512788965993
-    second: LCD-Sheet_19
+    second: RubberDampener_Xlarge
   - first:
       213: -1352966051605435935
     second: LCD-Sheet_20
@@ -70,7 +70,49 @@ TextureImporter:
     second: LCD-Sheet_24
   - first:
       213: 46863093899640513
-    second: LCD-Sheet_25
+    second: resistor
+  - first:
+      213: -9176910214347381805
+    second: StrikePCB1
+  - first:
+      213: -5000780165619165695
+    second: transistor
+  - first:
+      213: 6001989197861130289
+    second: LCD-Sheet_27
+  - first:
+      213: -3718920463994453551
+    second: LCD-Sheet_28
+  - first:
+      213: 1677405564622188033
+    second: LCD-Sheet_29
+  - first:
+      213: -6286861348621148571
+    second: LCD-Sheet_30
+  - first:
+      213: -1956850525725831626
+    second: LCD-Sheet_31
+  - first:
+      213: 2129433157912570560
+    second: chip
+  - first:
+      213: -6644860238239918760
+    second: StrikePCB2
+  - first:
+      213: 1232692154187994052
+    second: StrikePCB3
+  - first:
+      213: -5849731812568617652
+    second: StrikePCB3BG
+  - first:
+      213: -7185623242281064111
+    second: StrikePC2BG
+  - first:
+      213: -2490328180453691011
+    second: StrikePCB1BG
+  - first:
+      213: -4885078937950183327
+    second: LCD-Sheet_38
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -175,12 +217,12 @@ TextureImporter:
       name: LCD-Sheet_0
       rect:
         serializedVersion: 2
-        x: 330
+        x: 329
         y: 297
         width: 347
         height: 168
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -193,15 +235,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: LCD-Sheet_1
+      name: RubberDampener_small
       rect:
         serializedVersion: 2
-        x: 52
-        y: 240
-        width: 8
-        height: 16
+        x: 20
+        y: 242
+        width: 9
+        height: 8
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -214,15 +256,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: LCD-Sheet_2
+      name: Connector
       rect:
         serializedVersion: 2
-        x: 119
-        y: 160
-        width: 207
-        height: 120
+        x: 52
+        y: 240
+        width: 8
+        height: 16
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -235,36 +277,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: LCD-Sheet_6
-      rect:
-        serializedVersion: 2
-        x: 54
-        y: 207
-        width: 7
-        height: 8
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c91468afb9a13e230800000000000000
-      internalID: 3666803778835071388
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: LCD-Sheet_7
       rect:
         serializedVersion: 2
-        x: 64
-        y: 207
-        width: 7
-        height: 8
+        x: 666
+        y: 226
+        width: 92
+        height: 25
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -277,15 +298,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: LCD-Sheet_8
+      name: WireSlot
       rect:
         serializedVersion: 2
-        x: 75
-        y: 207
-        width: 7
-        height: 8
+        x: 769
+        y: 222
+        width: 65
+        height: 28
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -298,15 +319,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: LCD-Sheet_9
+      name: RubberDampener_medium
       rect:
         serializedVersion: 2
-        x: 86
-        y: 207
-        width: 7
-        height: 8
+        x: 19
+        y: 226
+        width: 11
+        height: 11
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -319,15 +340,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: LCD-Sheet_10
+      name: RubberDampener_large
       rect:
         serializedVersion: 2
-        x: 96
-        y: 207
-        width: 7
-        height: 8
+        x: 18
+        y: 210
+        width: 13
+        height: 13
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -340,15 +361,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: LCD-Sheet_11
+      name: LED_OFF
       rect:
         serializedVersion: 2
-        x: 338
-        y: 176
-        width: 87
-        height: 88
+        x: 54
+        y: 207
+        width: 7
+        height: 8
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -361,15 +382,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: LCD-Sheet_12
+      name: LED_BLUE
       rect:
         serializedVersion: 2
-        x: 428
-        y: 174
-        width: 87
-        height: 89
+        x: 64
+        y: 207
+        width: 7
+        height: 8
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -382,15 +403,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: LCD-Sheet_13
+      name: LED_GREEN
       rect:
         serializedVersion: 2
-        x: 523
-        y: 175
-        width: 87
-        height: 88
+        x: 75
+        y: 207
+        width: 7
+        height: 8
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -403,15 +424,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: LCD-Sheet_14
+      name: LED_RED
       rect:
         serializedVersion: 2
-        x: 53
-        y: 192
-        width: 9
-        height: 10
+        x: 86
+        y: 207
+        width: 7
+        height: 8
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -424,15 +445,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: LCD-Sheet_15
+      name: LED_YELLOW
       rect:
         serializedVersion: 2
-        x: 63
-        y: 192
-        width: 9
-        height: 10
+        x: 96
+        y: 207
+        width: 7
+        height: 8
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -445,15 +466,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: LCD-Sheet_16
+      name: BlueBones
       rect:
         serializedVersion: 2
-        x: 74
-        y: 192
-        width: 9
-        height: 10
+        x: 338
+        y: 176
+        width: 87
+        height: 87
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -466,15 +487,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: LCD-Sheet_17
+      name: YellowBones
       rect:
         serializedVersion: 2
-        x: 85
-        y: 192
-        width: 9
-        height: 10
+        x: 428
+        y: 174
+        width: 87
+        height: 88
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -487,15 +508,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: LCD-Sheet_18
+      name: MagentaBones
       rect:
         serializedVersion: 2
-        x: 95
-        y: 192
-        width: 9
-        height: 10
+        x: 523
+        y: 175
+        width: 87
+        height: 87
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -508,15 +529,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: LCD-Sheet_19
+      name: RubberDampener_Xlarge
       rect:
         serializedVersion: 2
-        x: 50
-        y: 176
-        width: 19
-        height: 10
+        x: 16
+        y: 192
+        width: 16
+        height: 16
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -532,12 +553,12 @@ TextureImporter:
       name: LCD-Sheet_20
       rect:
         serializedVersion: 2
-        x: 78
-        y: 169
-        width: 10
-        height: 17
+        x: 53
+        y: 192
+        width: 9
+        height: 10
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -553,12 +574,12 @@ TextureImporter:
       name: LCD-Sheet_21
       rect:
         serializedVersion: 2
-        x: 18
-        y: 112
-        width: 13
-        height: 46
+        x: 63
+        y: 192
+        width: 9
+        height: 10
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -574,12 +595,12 @@ TextureImporter:
       name: LCD-Sheet_22
       rect:
         serializedVersion: 2
-        x: 34
-        y: 144
-        width: 13
-        height: 16
+        x: 74
+        y: 192
+        width: 9
+        height: 10
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -595,12 +616,12 @@ TextureImporter:
       name: LCD-Sheet_23
       rect:
         serializedVersion: 2
-        x: 49
-        y: 148
-        width: 13
+        x: 85
+        y: 192
+        width: 9
         height: 10
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -616,12 +637,12 @@ TextureImporter:
       name: LCD-Sheet_24
       rect:
         serializedVersion: 2
-        x: 121
-        y: 24
-        width: 207
-        height: 114
+        x: 95
+        y: 192
+        width: 9
+        height: 10
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -634,15 +655,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: LCD-Sheet_25
+      name: resistor
       rect:
         serializedVersion: 2
-        x: 353
-        y: 24
-        width: 200
-        height: 114
+        x: 50
+        y: 176
+        width: 19
+        height: 10
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -650,6 +671,300 @@ TextureImporter:
       bones: []
       spriteID: 1ceb6f05cbd76a000800000000000000
       internalID: 46863093899640513
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StrikePCB1
+      rect:
+        serializedVersion: 2
+        x: 118
+        y: 160
+        width: 208
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d3ab2a08c015a080800000000000000
+      internalID: -9176910214347381805
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: transistor
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 169
+        width: 10
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10653744fe8a99ab0800000000000000
+      internalID: -5000780165619165695
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LCD-Sheet_27
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 112
+        width: 13
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1309e3420695b4350800000000000000
+      internalID: 6001989197861130289
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LCD-Sheet_28
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 144
+        width: 13
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d10eabaa8db36cc0800000000000000
+      internalID: -3718920463994453551
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LCD-Sheet_29
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 148
+        width: 13
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10ea1974977574710800000000000000
+      internalID: 1677405564622188033
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LCD-Sheet_30
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 77
+        width: 22
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 56e9d43a9e490c8a0800000000000000
+      internalID: -6286861348621148571
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LCD-Sheet_31
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 85
+        width: 15
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63e439f80ded7d4e0800000000000000
+      internalID: -1956850525725831626
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chip
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 83
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ca2156cc244d8d10800000000000000
+      internalID: 2129433157912570560
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StrikePCB2
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 24
+        width: 208
+        height: 114
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 855979db1d6b8c3a0800000000000000
+      internalID: -6644860238239918760
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StrikePCB3
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 24
+        width: 200
+        height: 114
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c359cfabf66b1110800000000000000
+      internalID: 1232692154187994052
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StrikePCB3BG
+      rect:
+        serializedVersion: 2
+        x: 583
+        y: 30
+        width: 155
+        height: 99
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4dab80e8e391dea0800000000000000
+      internalID: -5849731812568617652
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StrikePC2BG
+      rect:
+        serializedVersion: 2
+        x: 749
+        y: 30
+        width: 155
+        height: 99
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 159eb027bb9874c90800000000000000
+      internalID: -7185623242281064111
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StrikePCB1BG
+      rect:
+        serializedVersion: 2
+        x: 913
+        y: 31
+        width: 155
+        height: 99
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d71b9e5d6b3907dd0800000000000000
+      internalID: -2490328180453691011
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LCD-Sheet_38
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 64
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 160acb39696b43cb0800000000000000
+      internalID: -4885078937950183327
       vertices: []
       indices: 
       edges: []

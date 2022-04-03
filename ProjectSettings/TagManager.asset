@@ -41,6 +41,9 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: DisplayBG
+    uniqueID: 2226611721
+    locked: 0
   - name: Accesories
     uniqueID: 1980434221
     locked: 0
