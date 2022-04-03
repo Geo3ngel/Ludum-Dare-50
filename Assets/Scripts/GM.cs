@@ -36,7 +36,7 @@ public class GM : MonoBehaviour
         StrikeEvent?.Invoke(strikes);
     }
 
-    void Reset(){
+    public void Reset(){
         strikes = 0;
         StrikeEvent?.Invoke(strikes);
         // ResetEvent?.Invoke(this, EventArgs.Empty);
