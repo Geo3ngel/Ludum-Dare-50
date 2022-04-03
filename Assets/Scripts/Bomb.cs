@@ -18,7 +18,7 @@ public class Bomb : MonoBehaviour
         }else{
             _instance = this;
             // Set as subscriber to Strike Event
-            GM.Instance.ThirdStrikeEvent += ThirdStrike;
+            GM.Instance.StrikeEvent += Strike;
         }
     }
 
@@ -71,10 +71,12 @@ public class Bomb : MonoBehaviour
         }
     }
 
-    public void ThirdStrike(object sender, EventArgs e){
-        // TODO: Prime bomb for detonation...
-        // Might set a flag & send out another message, so once all required messages are received,
-        // The Explosion is triggered. (To ensure other animations/dialog is completed.)
+    public void Strike(int strike){
+        if(strike == 3){
+            // TODO: Prime bomb for detonation...
+            // Might set a flag & send out another message, so once all required messages are received,
+            // The Explosion is triggered. (To ensure other animations/dialog is completed.)
+        }
     }
 
     public void TriggerExplosion(int cause){
