@@ -630,6 +630,10 @@ PrefabInstance:
       propertyPath: off
       value: 
       objectReference: {fileID: -8151305811127048132, guid: 1c1075ab9873ff04484f7f503eda6e39, type: 3}
+    - target: {fileID: 7291442510639049312, guid: 05f298e35b2b0904ca884093bcca2aaa, type: 3}
+      propertyPath: blinkDurationRangeMax
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 7291442510639049313, guid: 05f298e35b2b0904ca884093bcca2aaa, type: 3}
       propertyPath: m_Sprite
       value: 
@@ -1271,6 +1275,10 @@ PrefabInstance:
       propertyPath: off
       value: 
       objectReference: {fileID: -8151305811127048132, guid: 1c1075ab9873ff04484f7f503eda6e39, type: 3}
+    - target: {fileID: 7291442510639049312, guid: 05f298e35b2b0904ca884093bcca2aaa, type: 3}
+      propertyPath: blinkDurationRangeMax
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7291442510639049313, guid: 05f298e35b2b0904ca884093bcca2aaa, type: 3}
       propertyPath: m_Sprite
       value: 
@@ -1604,6 +1612,10 @@ PrefabInstance:
       propertyPath: off
       value: 
       objectReference: {fileID: -8151305811127048132, guid: 1c1075ab9873ff04484f7f503eda6e39, type: 3}
+    - target: {fileID: 7291442510639049312, guid: 05f298e35b2b0904ca884093bcca2aaa, type: 3}
+      propertyPath: blinkDurationRangeMax
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7291442510639049313, guid: 05f298e35b2b0904ca884093bcca2aaa, type: 3}
       propertyPath: m_Sprite
       value: 
@@ -1920,6 +1932,10 @@ PrefabInstance:
       propertyPath: off
       value: 
       objectReference: {fileID: -8151305811127048132, guid: 1c1075ab9873ff04484f7f503eda6e39, type: 3}
+    - target: {fileID: 1371617556322437964, guid: 124ee436cb8b9554791662c893036c17, type: 3}
+      propertyPath: blinkDurationRangeMax
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 1371617556322437965, guid: 124ee436cb8b9554791662c893036c17, type: 3}
       propertyPath: m_Sprite
       value: 
@@ -2001,6 +2017,10 @@ PrefabInstance:
       propertyPath: off
       value: 
       objectReference: {fileID: -8151305811127048132, guid: 1c1075ab9873ff04484f7f503eda6e39, type: 3}
+    - target: {fileID: 1884075144730593657, guid: 29e1e8af73a9d0e478c286a2665adb66, type: 3}
+      propertyPath: blinkDurationRangeMax
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 29e1e8af73a9d0e478c286a2665adb66, type: 3}
 --- !u!1001 &7291442508867103514
@@ -2018,6 +2038,10 @@ PrefabInstance:
       propertyPath: off
       value: 
       objectReference: {fileID: -8151305811127048132, guid: 1c1075ab9873ff04484f7f503eda6e39, type: 3}
+    - target: {fileID: 7291442510639049312, guid: 05f298e35b2b0904ca884093bcca2aaa, type: 3}
+      propertyPath: blinkDurationRangeMax
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 7291442510639049313, guid: 05f298e35b2b0904ca884093bcca2aaa, type: 3}
       propertyPath: m_Sprite
       value: 
