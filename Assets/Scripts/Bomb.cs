@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using System;
 
 public class Bomb : MonoBehaviour
 {
@@ -16,9 +17,11 @@ public class Bomb : MonoBehaviour
             Destroy(this.gameObject);
         }else{
             _instance = this;
+            // Set as subscriber to Strike Event
+            GM.Instance.ThirdStrikeEvent += ThirdStrike;
         }
     }
-    
+
     [SerializeField] float startTime = 60f;
     [SerializeField] TextMeshProUGUI timeDisplay;
     [SerializeField] private float maxTime = 5999.999f;
@@ -66,6 +69,12 @@ public class Bomb : MonoBehaviour
             timeDisplay.SetText(Util.formatTime(remainingTime));
             // TODO: Trigger sound effect/animation bit to indicate successfully added time!
         }
+    }
+
+    public void ThirdStrike(object sender, EventArgs e){
+        // TODO: Prime bomb for detonation...
+        // Might set a flag & send out another message, so once all required messages are received,
+        // The Explosion is triggered. (To ensure other animations/dialog is completed.)
     }
 
     public void TriggerExplosion(int cause){
