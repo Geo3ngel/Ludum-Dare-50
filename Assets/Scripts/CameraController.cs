@@ -21,6 +21,7 @@ public class CameraController : MonoBehaviour
     private int direction;
     [SerializeField] private float speed = 1f;
     private float delayTime;
+    private float rotationTarget;
 
     private SpriteRenderer lensGlare;
     // Start is called before the first frame update
@@ -30,6 +31,7 @@ public class CameraController : MonoBehaviour
         rotating = false;
         delayTime = 0f;
         direction = 0;
+        rotationTarget = 0f;
     }
 
     // Update is called once per frame
@@ -44,15 +46,15 @@ public class CameraController : MonoBehaviour
         // Determine random degree to turn gear to, w/ cool down.
         // Determine if already rotating
         if (rotating){
-            // TODO: Add controls for target degree!
-            turnGear(direction*speed*Time.deltaTime);
+            // Steps towards the desired rotation target
+            turnGearTo();
         }else{
-            if(delayTime == 0){
+            if(delayTime <= 0){
                 // Generate rotation target!
-                float rotationTarget = Random.Range(rotationMin, rotationMax);
+                rotationTarget = Random.Range(rotationMin, rotationMax);
                 speed = Random.Range(speedMin, speedMax);
                 // Calc direction to rotate
-                float zRot = gear.transform.rotation.z;
+                float zRot = gear.transform.localEulerAngles.z;
                 if(rotationTarget != zRot){
                     if(zRot > rotationTarget){
                         direction = LEFT;
@@ -69,8 +71,29 @@ public class CameraController : MonoBehaviour
         }
     }
 
-    private void turnGearTo(float targetDegrees){
-        
+    private void turnGearTo(){
+        float currentZ = gear.transform.localEulerAngles.z;
+        float rotStepValue = direction*speed*Time.deltaTime;
+        if(direction == LEFT){
+            if(rotationTarget < currentZ+rotStepValue){
+                turnGear(rotStepValue);
+            }else{
+                setGearRotToTarget();
+            }
+        }else if(direction == RIGHT){
+            if(rotationTarget > currentZ+rotStepValue){
+                turnGear(rotStepValue);
+            }else{
+                setGearRotToTarget();
+            }
+        }
+    }
+
+    private void setGearRotToTarget(){
+        Vector3 newRot = gear.transform.localEulerAngles;
+        newRot.z = rotationTarget;
+        gear.transform.localRotation = Quaternion.Euler(newRot);
+        rotating = false;
     }
 
     private void turnGear(float degrees){
@@ -78,19 +101,19 @@ public class CameraController : MonoBehaviour
             // Decrease the glare's opacity when the lens is made larger
         // Lens MAX scale value should be 1.5, MIN should be .5
         // 90 degrees = .25 scale?
-        float newZ = gear.transform.rotation.z + degrees;
+        float newZ = gear.transform.localEulerAngles.z + degrees;
+        Vector3 newRot = gear.transform.localEulerAngles;
         if(newZ >= rotationMin && newZ <= rotationMax){
-            Quaternion newRot = gear.transform.rotation;
             newRot.z = newZ;
-            gear.transform.localRotation = newRot;
+            gear.transform.localRotation = Quaternion.Euler(newRot);
         }else{
-            Quaternion newRot = gear.transform.rotation;
-            if(newZ >= rotationMin){
+            if(newZ > rotationMax){
                 newRot.z = rotationMax;
-            }else{
+            }
+            if(newZ < rotationMin) {
                 newRot.z = rotationMin;
             }
-            gear.transform.localRotation = newRot;
+            gear.transform.localRotation = Quaternion.Euler(newRot);
             // Signals to stop rotating in this direction
             rotating = false;
         }
