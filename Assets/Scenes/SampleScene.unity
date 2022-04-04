@@ -726,6 +726,7 @@ GameObject:
   m_Component:
   - component: {fileID: 559284784}
   - component: {fileID: 559284785}
+  - component: {fileID: 559284786}
   m_Layer: 5
   m_Name: Shutter
   m_TagString: Untagged
@@ -792,8 +793,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -2068355575
+  m_SortingLayer: 1
   m_SortingOrder: 0
   m_Sprite: {fileID: -3492167864570214213, guid: 0cc6417746f103749840584336610f86, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -805,6 +806,56 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
+--- !u!331 &559284786
+SpriteMask:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 559284783}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10758, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: -3492167864570214213, guid: 0cc6417746f103749840584336610f86, type: 3}
+  m_MaskAlphaCutoff: 0.22
+  m_FrontSortingLayerID: 0
+  m_BackSortingLayerID: 0
+  m_FrontSortingLayer: 0
+  m_BackSortingLayer: 0
+  m_FrontSortingOrder: 0
+  m_BackSortingOrder: 0
+  m_IsCustomRangeActive: 0
   m_SpriteSortPoint: 0
 --- !u!1 &616354375
 GameObject:
@@ -1230,7 +1281,7 @@ SpriteRenderer:
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
-  m_MaskInteraction: 0
+  m_MaskInteraction: 1
   m_SpriteSortPoint: 0
 --- !u!1 &720968852
 GameObject:
@@ -1390,8 +1441,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 735591003}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: -0.01, y: 0.012, z: 0}
+  m_LocalScale: {x: 0.5, y: 0.5, z: 1}
   m_Children:
   - {fileID: 760727066}
   m_Father: {fileID: 616354376}
@@ -1747,7 +1798,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 838144725}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -4590}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 559284784}
@@ -1807,7 +1858,7 @@ SpriteRenderer:
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
-  m_MaskInteraction: 0
+  m_MaskInteraction: 1
   m_SpriteSortPoint: 0
 --- !u!1 &882108467
 GameObject:
@@ -1906,6 +1957,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1045804227}
   - component: {fileID: 1045804228}
+  - component: {fileID: 1045804229}
   m_Layer: 0
   m_Name: Camera
   m_TagString: Untagged
@@ -1980,6 +2032,28 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1045804229
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1045804226}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ba309010fd9140a46a0d2816a45f666d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gear: {fileID: 616354375}
+  lens: {fileID: 735591003}
+  glare: {fileID: 760727065}
+  rotationMin: 0
+  rotationMax: 180
+  speedMin: 0.1
+  speedMax: 5
+  delayDurationMin: 0
+  delayDurationMax: 10
+  speed: 1
 --- !u!1 &1056108388
 GameObject:
   m_ObjectHideFlags: 0
@@ -2863,11 +2937,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 734129322673951601, guid: b1380155379fc3042b84392e09bc64af, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 8.33
+      value: -6.05
       objectReference: {fileID: 0}
     - target: {fileID: 734129322673951601, guid: b1380155379fc3042b84392e09bc64af, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1
+      value: -4.65
       objectReference: {fileID: 0}
     - target: {fileID: 734129322673951601, guid: b1380155379fc3042b84392e09bc64af, type: 3}
       propertyPath: m_LocalPosition.z
@@ -2928,11 +3002,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1371617556322437955, guid: 124ee436cb8b9554791662c893036c17, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -3.25
+      value: 10.04
       objectReference: {fileID: 0}
     - target: {fileID: 1371617556322437955, guid: 124ee436cb8b9554791662c893036c17, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -2.91
+      value: 4.06
       objectReference: {fileID: 0}
     - target: {fileID: 1371617556322437955, guid: 124ee436cb8b9554791662c893036c17, type: 3}
       propertyPath: m_LocalPosition.z
@@ -3001,11 +3075,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1884075144730593606, guid: 29e1e8af73a9d0e478c286a2665adb66, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 10.27
+      value: -4.1099997
       objectReference: {fileID: 0}
     - target: {fileID: 1884075144730593606, guid: 29e1e8af73a9d0e478c286a2665adb66, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1
+      value: -4.6499996
       objectReference: {fileID: 0}
     - target: {fileID: 1884075144730593606, guid: 29e1e8af73a9d0e478c286a2665adb66, type: 3}
       propertyPath: m_LocalPosition.z
