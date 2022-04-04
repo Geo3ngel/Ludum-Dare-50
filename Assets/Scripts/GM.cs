@@ -15,7 +15,22 @@ public class GM : MonoBehaviour
     [SerializeField] private int strikes = 0;
     public delegate void StrikeEventHandler(int strikeCount);
     public event StrikeEventHandler StrikeEvent;
-    // public event EventHandler ResetEvent;
+
+    // Mini-Game delegates & handlers, mostly for controlling interactions w/
+    // Mini-Game area. 
+    public delegate void PlayingMiniGameEventHandler();
+    public event PlayingMiniGameEventHandler MiniGameReadyEvent;
+    public delegate void FinishMiniGameEventHandler();
+    public event FinishMiniGameEventHandler FinishMiniGameEvent;
+
+    // PlayGameEvent refers to when the player has indicated they are ready to play
+    // the game. Starts the count down timer.
+    public delegate void PlayGameEventHandler();
+    public event FinishMiniGameEventHandler PlayGameEvent;
+
+    // Msg sent out when failure is achieved.
+    public delegate void GameOverEventHandler(int cause);
+    public event GameOverEventHandler GameOverEvent;
 
     private void Awake() {
         if(_instance != null && _instance != this){
