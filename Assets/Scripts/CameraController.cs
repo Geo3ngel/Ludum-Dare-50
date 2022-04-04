@@ -48,6 +48,7 @@ public class CameraController : MonoBehaviour
         if (rotating){
             // Steps towards the desired rotation target
             turnGearTo();
+            scaleLens();
         }else{
             if(delayTime <= 0){
                 // Generate rotation target!
@@ -117,6 +118,14 @@ public class CameraController : MonoBehaviour
             // Signals to stop rotating in this direction
             rotating = false;
         }
+    }
+
+    private void scaleLens(){
+        // Translates Rotation to Lens scale
+        float z = gear.transform.localEulerAngles.z;
+        float scaleValue = .5f + (z/360f);
+        Vector3 newScale = new Vector3(scaleValue, scaleValue, lens.transform.localScale.z);
+        lens.transform.localScale = newScale;
     }
 
     public void takeControl(){
