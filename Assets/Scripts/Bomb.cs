@@ -19,7 +19,10 @@ public class Bomb : MonoBehaviour
             _instance = this;
             // Set as subscriber to Strike Event
             GM.Instance.StrikeEvent += Strike;
+            GM.Instance.PlayGameEvent += BeginCountdown;
+            GM.Instance.GameOverEvent += TriggerExplosion;
         }
+        ResetTimer();
     }
 
     [SerializeField] float startTime = 60f;
@@ -28,18 +31,12 @@ public class Bomb : MonoBehaviour
     [SerializeField] private bool bombTicking = false;
     private float remainingTime;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        ResetTimer();
-    }
-
     public void BeginCountdown(){
         bombTicking = true;
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
         if (bombTicking){
             remainingTime -= Time.deltaTime;
