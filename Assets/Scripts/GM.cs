@@ -51,6 +51,11 @@ public class GM : MonoBehaviour
         StrikeEvent?.Invoke(strikes);
     }
 
+    public void miniGameReady(){
+        MiniGameReadyEvent?.Invoke();
+        Debug.Log("MiniGameReadyEvents");
+    }
+
     public void Reset(){
         strikes = 0;
         StrikeEvent?.Invoke(strikes);

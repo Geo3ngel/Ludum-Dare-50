@@ -15,6 +15,10 @@ public class ShutterController : MonoBehaviour
     /// - Ideally would like some SFX for opening. Like maybe a piston/compression SFX.
     /// </summary>
 
+    [SerializeField] private Animator anim;
+    private string openShutter = "ShutterAnimOpen";
+    private string closeShutter = "ShutterAnimClose";
+
     private void Awake() {
         GM.Instance.MiniGameReadyEvent += OpenShutter;
         GM.Instance.FinishMiniGameEvent += CloseShutter;
@@ -26,10 +30,13 @@ public class ShutterController : MonoBehaviour
     }
 
     public void OpenShutter(){
-        // TODO: Call open animation
+        // Call open animation
+        anim.Play(openShutter);
+        Debug.Log("OpenShutter called!");
     }
 
     public void CloseShutter(){
-        // TODO: Call close animation
+        // Call close animation
+        anim.Play(closeShutter);
     }
 }
