@@ -7,4 +7,6 @@ static class Constants{
     public const int FIRST_STRIKE = 1;
     public const int SECOND_STRIKE = 2;
     public const int THIRD_STRIKE = 3;
+
+    public const int FAILED_CONNECT_THE_WIRES = 0;
 }
