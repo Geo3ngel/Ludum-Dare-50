@@ -11,6 +11,19 @@ public abstract class MiniGame : MonoBehaviour
     
     // Generate
 
+    protected abstract void Load();
+    // Should interact w/ some persisting value?
+    // Need a way to translate the difficulty to gameplay features too...
+    protected abstract void RaiseDifficulty(); 
+    
+    /// <summary>
+    /// Marks the game as finished.
+    /// Adds appropriate bonus to timer
+    /// Triggers the shutter close animation
+    /// Closes out/Clears the mini game
+    /// </summary>
+    protected abstract void Complete();
+
     /// <summary>
     /// Failure cause to report if the mini-game is failed for further processing.
     /// Should always store the value in Constants.cs & reference.

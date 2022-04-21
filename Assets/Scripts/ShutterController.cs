@@ -18,6 +18,7 @@ public class ShutterController : MonoBehaviour
     [SerializeField] private Animator anim;
     private string openShutter = "ShutterAnimOpen";
     private string closeShutter = "ShutterAnimClose";
+    private bool toggleOpen = false; 
 
     private void Awake() {
         GM.Instance.MiniGameReadyEvent += OpenShutter;
@@ -31,7 +32,13 @@ public class ShutterController : MonoBehaviour
 
     public void OpenShutter(){
         // Call open animation
-        anim.Play(openShutter);
+        if (!toggleOpen){
+            toggleOpen = !toggleOpen;
+            anim.Play(openShutter);
+        }else{
+            toggleOpen = !toggleOpen;
+            anim.Play(closeShutter);
+        }
         Debug.Log("OpenShutter called!");
     }
 
