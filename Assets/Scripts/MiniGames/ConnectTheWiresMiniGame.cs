@@ -18,6 +18,10 @@ public class ConnectTheWiresMiniGame : MiniGame
         Debug.Log("Width: "+planeWidth);
     }
 
+    protected override void Load(){
+        // TODO: Implement
+    }
+
     // BG is a circuit board.
     // The wire's "connection points" have a base that appears as a metal contact,
     // With a color in the middle. (Color is randomly generated)
@@ -87,5 +91,13 @@ public class ConnectTheWiresMiniGame : MiniGame
 
     protected override int GetCause(){
         return Constants.FAILED_CONNECT_THE_WIRES;
+    }
+
+    protected override void RaiseDifficulty(){
+        // TODO: Implement
+    }
+
+    protected override void Complete(){
+        // TODO: Implement
     }
 }
